@@ -1,0 +1,16 @@
+# Azure Static Web Apps configuration
+{
+  "routes": [],
+  "navigationFallback": {
+    "rewrite": "/404.html"
+  },
+  "globalHeaders": {
+    "content-security-policy": "default-src 'self' https: 'unsafe-inline' 'unsafe-eval'",
+    "cache-control": "public, max-age=31536000, immutable"
+  },
+  "mimeTypes": {
+    ".json": "application/json",
+    ".js": "text/javascript",
+    ".css": "text/css"
+  }
+}
