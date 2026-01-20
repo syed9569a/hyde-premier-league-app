@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -6,7 +7,16 @@ export default function Home() {
       {/* Navigation Bar */}
       <nav className="bg-black text-white py-4 px-6 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold">HYDE PREMIER LEAGUE</h1>
+          <Link href="/" className="hover:opacity-80 transition-opacity">
+            <Image
+              src="/hpl_logo_small.jpg"
+              alt="Hyde Premier League Logo"
+              width={200}
+              height={50}
+              className="h-auto"
+              priority
+            />
+          </Link>
           <div className="hidden md:flex gap-6">
             <a href="#leagues" className="hover:text-gray-300 transition-colors">Tournaments</a>
             <a href="#why-play" className="hover:text-gray-300 transition-colors">Why Play</a>

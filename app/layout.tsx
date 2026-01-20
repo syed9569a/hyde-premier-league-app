@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Hyde Premier League - Local Football Tournaments",
   description: "Join the most exciting local football leagues in Hyde. Premier League, FA Cup, Champions League, and Summer League tournaments.",
+  icons: {
+    icon: "/hpl_logo_small.jpg",
+  },
 };
 
 export default function RootLayout({
