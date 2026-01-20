@@ -3,8 +3,9 @@ import Link from "next/link";
 export default function PremierLeaguePage() {
   const seasons = [
     { year: "2025/26", champion: "TBD", status: "Ongoing" },
-    { year: "2024/25", champion: "TBD", status: "Completed" },
-    { year: "2023/24", champion: "TBD", status: "Completed" },
+    { year: "2024/25", champion: "Team Z", status: "Completed" },
+    { year: "2023/24", champion: "Musulman FC", status: "Completed" },
+    { year: "2022/23", champion: "Braziliant", status: "Completed" },
   ];
 
   return (

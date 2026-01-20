@@ -3,8 +3,10 @@ import Link from "next/link";
 export default function SummerLeaguePage() {
   const seasons = [
     { year: "2026", champion: "TBD", status: "Upcoming" },
-    { year: "2025", champion: "TBD", status: "Completed" },
-    { year: "2024", champion: "TBD", status: "Completed" },
+    { year: "2025", champion: "Braziliant", status: "Completed" },
+    { year: "2024", champion: "Scissors FC", status: "Completed" },
+    { year: "2023", champion: "CKA United", status: "Completed" },
+    { year: "2022", champion: "Braziliant", status: "Completed" },
   ];
 
   return (

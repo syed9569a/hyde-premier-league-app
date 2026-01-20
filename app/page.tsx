@@ -48,16 +48,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Repeating Stats Section (PowerLeague Style) */}
+      {/* Repeating Stats Section */}
       <section className="bg-white border-t-4 border-b-4 border-black py-12 overflow-hidden">
         <div className="animate-marquee whitespace-nowrap text-xl font-bold text-black">
           <span className="mx-8">📊 100+ Games Played</span>
           <span className="mx-8">👥 100+ Active Players</span>
-          <span className="mx-8">🏆 4 Major Tournaments</span>
+          <span className="mx-8">🏆 3 Major Tournaments</span>
           <span className="mx-8">⚽ Growing Community</span>
           <span className="mx-8">📊 100+ Games Played</span>
           <span className="mx-8">👥 100+ Active Players</span>
-          <span className="mx-8">🏆 4 Major Tournaments</span>
+          <span className="mx-8">🏆 3 Major Tournaments</span>
           <span className="mx-8">⚽ Growing Community</span>
         </div>
       </section>
@@ -76,7 +76,7 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {/* Premier League */}
             <Link href="/tournaments/premier-league">
               <div className="bg-black text-white rounded overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group">
@@ -116,7 +116,7 @@ export default function Home() {
             </Link>
 
             {/* Champions League */}
-            <Link href="/tournaments/champions-league">
+            {/* <Link href="/tournaments/champions-league">
               <div className="bg-black text-white rounded overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group">
                 <div className="h-48 bg-gradient-to-br from-gray-800 to-black flex items-center justify-center overflow-hidden relative">
                   <span className="text-6xl group-hover:scale-110 transition-transform duration-300">⭐</span>
@@ -132,7 +132,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </Link>
+            </Link> */}
 
             {/* Summer League */}
             <Link href="/tournaments/summer-league">
