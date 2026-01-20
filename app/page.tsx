@@ -253,7 +253,6 @@ export default function Home() {
               <ul className="space-y-3">
                 <li><Link href="/tournaments/premier-league" className="hover:text-white transition-colors duration-300">Premier League</Link></li>
                 <li><Link href="/tournaments/fa-cup" className="hover:text-white transition-colors duration-300">FA Cup</Link></li>
-                <li><Link href="/tournaments/champions-league" className="hover:text-white transition-colors duration-300">Champions League</Link></li>
                 <li><Link href="/tournaments/summer-league" className="hover:text-white transition-colors duration-300">Summer League</Link></li>
               </ul>
             </div>

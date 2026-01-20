@@ -2,8 +2,9 @@ import Link from "next/link";
 
 export default function FACupPage() {
   const editions = [
-    { year: "2025", winner: "TBD", status: "Upcoming" },
-    { year: "2024", winner: "TBD", status: "Completed" },
+    { year: "2026", winner: "TBD", status: "Upcoming" },
+    { year: "2025", winner: "Team Z", status: "Completed" },
+    { year: "2024", winner: "Braziliant", status: "Completed" },
     { year: "2023", winner: "Mighty Morphin FC", status: "Completed" },
   ];
 
