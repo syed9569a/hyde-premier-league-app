@@ -1,26 +1,83 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation Bar */}
       <nav className="bg-black text-white py-4 px-6 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <Link href="/" className="hover:opacity-80 transition-opacity">
-            <Image
-              src="/hpl_logo_small.jpg"
-              alt="Hyde Premier League Logo"
-              width={200}
-              height={50}
-              className="h-auto"
-              priority
-            />
-          </Link>
-          <div className="hidden md:flex gap-6">
-            <a href="#leagues" className="hover:text-gray-300 transition-colors">Tournaments</a>
-            <a href="#why-play" className="hover:text-gray-300 transition-colors">Why Play</a>
+        <div className="max-w-7xl mx-auto">
+          <div className="flex justify-between items-center md:justify-between">
+            {/* Hamburger Menu Button - Mobile Only */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="md:hidden text-white hover:text-gray-300 transition-colors z-50"
+              aria-label="Toggle menu"
+            >
+              {!mobileMenuOpen ? (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              ) : (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              )}
+            </button>
+
+            {/* Logo - Centered on Mobile */}
+            <Link href="/" className="hover:opacity-80 transition-opacity md:mr-auto absolute left-1/2 transform -translate-x-1/2 md:static md:transform-none">
+              <Image
+                src="/hpl_logo_small.jpg"
+                alt="Hyde Premier League Logo"
+                width={200}
+                height={50}
+                className="h-auto"
+                priority
+              />
+            </Link>
+
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex gap-6">
+              <a href="#leagues" className="hover:text-gray-300 transition-colors">Tournaments</a>
+              <a href="#why-play" className="hover:text-gray-300 transition-colors">Why Play</a>
+              <Link href="/about" className="hover:text-gray-300 transition-colors">About Us</Link>
+            </div>
           </div>
+
+          {/* Mobile Menu */}
+          {mobileMenuOpen && (
+            <div className="md:hidden mt-4 pb-4">
+              <div className="flex flex-col space-y-4">
+                <a 
+                  href="#leagues" 
+                  className="hover:text-gray-300 transition-colors py-2 border-b border-gray-700"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Tournaments
+                </a>
+                <a 
+                  href="#why-play" 
+                  className="hover:text-gray-300 transition-colors py-2 border-b border-gray-700"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Why Play
+                </a>
+                <Link 
+                  href="/about" 
+                  className="hover:text-gray-300 transition-colors py-2 border-b border-gray-700"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  About Us
+                </Link>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
