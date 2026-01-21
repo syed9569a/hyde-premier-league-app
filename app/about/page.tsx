@@ -32,7 +32,7 @@ export default function AboutPage() {
             </p>
             
             <p>
-              That spark truly ignited when <strong>Mohammed Abu Khalid</strong> first approached the idea and shared it with his close friend <strong>Nurul</strong>. What started as a casual conversation soon became a movement. Four remarkable years on, that single idea has transformed into a thriving legacy of multiple summer and winter leagues, alongside eagerly anticipated tournaments that have become fixtures in the community calendar. Week after week, season after season, football has become the language that unites everyone.
+              That spark truly ignited when <strong>Khalid Mohammed</strong> first approached the idea and shared it with his close friend <strong>Nurul</strong>. What started as a casual conversation soon became a movement. Four remarkable years on, that single idea has transformed into a thriving legacy of multiple summer and winter leagues, alongside eagerly anticipated tournaments that have become fixtures in the community calendar. Week after week, season after season, football has become the language that unites everyone.
             </p>
             
             <p>
@@ -59,8 +59,9 @@ export default function AboutPage() {
             </p>
           </div>
           
-          <div className="flex justify-center">
-            <div className="text-center max-w-sm">
+          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            {/* Founder 1 */}
+            <div className="text-center">
               <div className="relative w-64 h-64 mx-auto mb-6 rounded-full overflow-hidden border-4 border-black shadow-2xl">
                 <Image
                   src="/founder_1.jpg"
@@ -73,7 +74,25 @@ export default function AboutPage() {
               <h3 className="text-2xl font-bold text-black mb-2">Nurul Ullah</h3>
               <p className="text-lg text-gray-600 font-semibold mb-3">Co-Founder</p>
               <p className="text-gray-700 leading-relaxed">
-                Joining forces with Mohammed Abu Khalid, Nurul helped transform a simple conversation into a thriving movement, bringing structure and dedication to make Hyde Premier League a reality.
+                Joining forces with Khalid Mohammed, Nurul helped transform a simple conversation into a thriving movement, bringing structure and dedication to make Hyde Premier League a reality.
+              </p>
+            </div>
+
+            {/* Founder 2 */}
+            <div className="text-center">
+              <div className="relative w-64 h-64 mx-auto mb-6 rounded-full overflow-hidden border-4 border-black shadow-2xl">
+                <Image
+                  src="/founder_2.jpeg"
+                  alt="Khalid Mohammed"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-black mb-2">Khalid Mohammed</h3>
+              <p className="text-lg text-gray-600 font-semibold mb-3">Founder</p>
+              <p className="text-gray-700 leading-relaxed">
+                The visionary who sparked the idea of Hyde Premier League, Khalid's passion and dedication set the foundation for what has become a thriving community legacy.
               </p>
             </div>
           </div>
