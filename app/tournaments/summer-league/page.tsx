@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaArrowLeft, FaSun, FaDumbbell, FaFaceSmile, FaTrophy } from "react-icons/fa6";
 
 export default function SummerLeaguePage() {
   const seasons = [
@@ -15,7 +16,7 @@ export default function SummerLeaguePage() {
       <header className="bg-black text-white py-20 px-6 border-b-4 border-white">
         <div className="max-w-7xl mx-auto">
           <Link href="/" className="text-white hover:text-gray-300 mb-4 inline-block transition-colors flex items-center gap-2 group">
-            <span className="group-hover:-translate-x-1 transition-transform">←</span>
+            <FaArrowLeft className="group-hover:-translate-x-1 transition-transform" />
             Back to Home
           </Link>
           <h1 className="text-6xl md:text-7xl font-bold mb-4">SUMMER LEAGUE</h1>
@@ -61,25 +62,25 @@ export default function SummerLeaguePage() {
           <h2 className="text-5xl font-bold mb-16">WHY SUMMER FOOTBALL?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white bg-opacity-5 rounded-lg p-8 hover:bg-opacity-10 transition-all duration-300 transform hover:-translate-y-2">
-              <h3 className="text-2xl font-bold mb-4">☀️ PERFECT WEATHER</h3>
+              <h3 className="text-2xl font-bold mb-4 flex items-center gap-3"><FaSun /> PERFECT WEATHER</h3>
               <p className="text-gray-300">
                 Long evenings and great weather make summer football special. Play in ideal conditions.
               </p>
             </div>
             <div className="bg-white bg-opacity-5 rounded-lg p-8 hover:bg-opacity-10 transition-all duration-300 transform hover:-translate-y-2">
-              <h3 className="text-2xl font-bold mb-4">💪 STAY SHARP</h3>
+              <h3 className="text-2xl font-bold mb-4 flex items-center gap-3"><FaDumbbell /> STAY SHARP</h3>
               <p className="text-gray-300">
                 Don't lose fitness over summer. Keep playing, keep improving, and be ready for the new season.
               </p>
             </div>
             <div className="bg-white bg-opacity-5 rounded-lg p-8 hover:bg-opacity-10 transition-all duration-300 transform hover:-translate-y-2">
-              <h3 className="text-2xl font-bold mb-4">🎉 SOCIAL FUN</h3>
+              <h3 className="text-2xl font-bold mb-4 flex items-center gap-3"><FaFaceSmile /> SOCIAL FUN</h3>
               <p className="text-gray-300">
                 Relaxed summer atmosphere. Great football with friends in the sunshine.
               </p>
             </div>
             <div className="bg-white bg-opacity-5 rounded-lg p-8 hover:bg-opacity-10 transition-all duration-300 transform hover:-translate-y-2">
-              <h3 className="text-2xl font-bold mb-4">🏆 MORE TROPHIES</h3>
+              <h3 className="text-2xl font-bold mb-4 flex items-center gap-3"><FaTrophy /> MORE TROPHIES</h3>
               <p className="text-gray-300">
                 Another chance to win silverware. Keep the competitive spirit alive all year round.
               </p>

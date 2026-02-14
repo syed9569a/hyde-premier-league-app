@@ -1,5 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
+import {
+  FaArrowLeft,
+  FaTrophy,
+  FaUsers,
+  FaFutbol,
+  FaChartColumn,
+  FaHandshake,
+  FaDumbbell,
+  FaStar,
+  FaFaceSmile,
+} from "react-icons/fa6";
 
 export default function AboutPage() {
   return (
@@ -8,7 +19,7 @@ export default function AboutPage() {
       <header className="bg-black text-white py-20 px-6 border-b-4 border-white">
         <div className="max-w-7xl mx-auto">
           <Link href="/" className="text-white hover:text-gray-300 mb-4 inline-block transition-colors flex items-center gap-2 group">
-            <span className="group-hover:-translate-x-1 transition-transform">←</span>
+            <FaArrowLeft className="group-hover:-translate-x-1 transition-transform" />
             Back to Home
           </Link>
           <h1 className="text-6xl md:text-7xl font-bold mb-4">ABOUT US</h1>
@@ -133,7 +144,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="bg-black text-white w-20 h-20 rounded-full flex items-center justify-center text-4xl mx-auto mb-4">
-                🏆
+                <FaTrophy />
               </div>
               <h3 className="text-xl font-bold mb-3 text-black">Multiple Tournaments</h3>
               <p className="text-gray-700">
@@ -142,7 +153,7 @@ export default function AboutPage() {
             </div>
             <div className="text-center">
               <div className="bg-black text-white w-20 h-20 rounded-full flex items-center justify-center text-4xl mx-auto mb-4">
-                👥
+                <FaUsers />
               </div>
               <h3 className="text-xl font-bold mb-3 text-black">Community Focus</h3>
               <p className="text-gray-700">
@@ -151,7 +162,7 @@ export default function AboutPage() {
             </div>
             <div className="text-center">
               <div className="bg-black text-white w-20 h-20 rounded-full flex items-center justify-center text-4xl mx-auto mb-4">
-                ⚽
+                <FaFutbol />
               </div>
               <h3 className="text-xl font-bold mb-3 text-black">Organized Fixtures</h3>
               <p className="text-gray-700">
@@ -160,7 +171,7 @@ export default function AboutPage() {
             </div>
             <div className="text-center">
               <div className="bg-black text-white w-20 h-20 rounded-full flex items-center justify-center text-4xl mx-auto mb-4">
-                📊
+                <FaChartColumn />
               </div>
               <h3 className="text-xl font-bold mb-3 text-black">Stats & Records</h3>
               <p className="text-gray-700">
@@ -278,28 +289,28 @@ export default function AboutPage() {
             <div className="bg-white bg-opacity-5 rounded-lg p-12">
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <span className="text-3xl">🤝</span>
+                  <FaHandshake className="text-3xl" />
                   <div>
                     <h3 className="text-xl font-bold mb-2">Building Connections</h3>
                     <p className="text-gray-300">Creating lasting friendships through shared passion</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="text-3xl">💪</span>
+                  <FaDumbbell className="text-3xl" />
                   <div>
                     <h3 className="text-xl font-bold mb-2">Promoting Health</h3>
                     <p className="text-gray-300">Encouraging active lifestyles in our community</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="text-3xl">🌟</span>
+                  <FaStar className="text-3xl" />
                   <div>
                     <h3 className="text-xl font-bold mb-2">Inspiring Excellence</h3>
                     <p className="text-gray-300">Motivating players to reach their potential</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="text-3xl">🎉</span>
+                  <FaFaceSmile className="text-3xl" />
                   <div>
                     <h3 className="text-xl font-bold mb-2">Creating Memories</h3>
                     <p className="text-gray-300">Unforgettable moments on and off the pitch</p>

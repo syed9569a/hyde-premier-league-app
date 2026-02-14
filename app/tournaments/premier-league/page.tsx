@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaArrowLeft } from "react-icons/fa6";
 
 export default function PremierLeaguePage() {
   const seasons = [
@@ -14,7 +15,7 @@ export default function PremierLeaguePage() {
       <header className="bg-black text-white py-20 px-6 border-b-4 border-white">
         <div className="max-w-7xl mx-auto">
           <Link href="/" className="text-white hover:text-gray-300 mb-4 inline-block transition-colors flex items-center gap-2 group">
-            <span className="group-hover:-translate-x-1 transition-transform">←</span>
+            <FaArrowLeft className="group-hover:-translate-x-1 transition-transform" />
             Back to Home
           </Link>
           <h1 className="text-6xl md:text-7xl font-bold mb-4">PREMIER LEAGUE</h1>

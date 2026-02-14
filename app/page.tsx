@@ -3,6 +3,18 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import {
+  FaBars,
+  FaXmark,
+  FaFutbol,
+  FaTrophy,
+  FaSun,
+  FaUsers,
+  FaChartColumn,
+  FaHandshake,
+  FaDumbbell,
+  FaMedal,
+} from "react-icons/fa6";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,13 +32,9 @@ export default function Home() {
               aria-label="Toggle menu"
             >
               {!mobileMenuOpen ? (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
+                <FaBars className="w-6 h-6" />
               ) : (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
+                <FaXmark className="w-6 h-6" />
               )}
             </button>
 
@@ -118,14 +126,14 @@ export default function Home() {
       {/* Repeating Stats Section */}
       <section className="bg-white border-t-4 border-b-4 border-black py-12 overflow-hidden">
         <div className="animate-marquee whitespace-nowrap text-xl font-bold text-black">
-          <span className="mx-8">📊 100+ Games Played</span>
-          <span className="mx-8">👥 100+ Active Players</span>
-          <span className="mx-8">🏆 3 Major Tournaments</span>
-          <span className="mx-8">⚽ Growing Community</span>
-          <span className="mx-8">📊 100+ Games Played</span>
-          <span className="mx-8">👥 100+ Active Players</span>
-          <span className="mx-8">🏆 3 Major Tournaments</span>
-          <span className="mx-8">⚽ Growing Community</span>
+          <span className="mx-8 inline-flex items-center gap-2"><FaChartColumn /> 100+ Games Played</span>
+          <span className="mx-8 inline-flex items-center gap-2"><FaUsers /> 100+ Active Players</span>
+          <span className="mx-8 inline-flex items-center gap-2"><FaTrophy /> 3 Major Tournaments</span>
+          <span className="mx-8 inline-flex items-center gap-2"><FaFutbol /> Growing Community</span>
+          <span className="mx-8 inline-flex items-center gap-2"><FaChartColumn /> 100+ Games Played</span>
+          <span className="mx-8 inline-flex items-center gap-2"><FaUsers /> 100+ Active Players</span>
+          <span className="mx-8 inline-flex items-center gap-2"><FaTrophy /> 3 Major Tournaments</span>
+          <span className="mx-8 inline-flex items-center gap-2"><FaFutbol /> Growing Community</span>
         </div>
       </section>
 
@@ -148,7 +156,7 @@ export default function Home() {
             <Link href="/tournaments/premier-league">
               <div className="bg-black text-white rounded overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group">
                 <div className="h-48 bg-gradient-to-br from-gray-800 to-black flex items-center justify-center overflow-hidden relative">
-                  <span className="text-6xl group-hover:scale-110 transition-transform duration-300">⚽</span>
+                  <FaFutbol className="text-6xl group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-gray-200 transition-colors">Premier League</h3>
@@ -167,7 +175,7 @@ export default function Home() {
             <Link href="/tournaments/fa-cup">
               <div className="bg-black text-white rounded overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group">
                 <div className="h-48 bg-gradient-to-br from-gray-800 to-black flex items-center justify-center overflow-hidden relative">
-                  <span className="text-6xl group-hover:scale-110 transition-transform duration-300">🏆</span>
+                  <FaTrophy className="text-6xl group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-gray-200 transition-colors">FA Cup</h3>
@@ -205,7 +213,7 @@ export default function Home() {
             <Link href="/tournaments/summer-league">
               <div className="bg-black text-white rounded overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group">
                 <div className="h-48 bg-gradient-to-br from-gray-800 to-black flex items-center justify-center overflow-hidden relative">
-                  <span className="text-6xl group-hover:scale-110 transition-transform duration-300">☀️</span>
+                  <FaSun className="text-6xl group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-gray-200 transition-colors">Summer League</h3>
@@ -239,7 +247,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="text-center group hover:scale-105 transition-transform duration-300">
               <div className="bg-white text-black w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gray-200 transition-colors">
-                <span className="text-5xl">🤝</span>
+                <FaHandshake className="text-5xl" />
               </div>
               <h3 className="text-2xl font-bold mb-4 group-hover:text-gray-200 transition-colors">Community First</h3>
               <p className="text-gray-300 group-hover:text-gray-100 transition-colors">
@@ -249,7 +257,7 @@ export default function Home() {
 
             <div className="text-center group hover:scale-105 transition-transform duration-300">
               <div className="bg-white text-black w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gray-200 transition-colors">
-                <span className="text-5xl">💪</span>
+                <FaDumbbell className="text-5xl" />
               </div>
               <h3 className="text-2xl font-bold mb-4 group-hover:text-gray-200 transition-colors">Stay Active</h3>
               <p className="text-gray-300 group-hover:text-gray-100 transition-colors">
@@ -259,7 +267,7 @@ export default function Home() {
 
             <div className="text-center group hover:scale-105 transition-transform duration-300">
               <div className="bg-white text-black w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gray-200 transition-colors">
-                <span className="text-5xl">🏅</span>
+                <FaMedal className="text-5xl" />
               </div>
               <h3 className="text-2xl font-bold mb-4 group-hover:text-gray-200 transition-colors">Competitive Edge</h3>
               <p className="text-gray-300 group-hover:text-gray-100 transition-colors">
